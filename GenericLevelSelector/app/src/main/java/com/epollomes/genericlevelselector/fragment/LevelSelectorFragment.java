@@ -86,16 +86,7 @@ public class LevelSelectorFragment extends Fragment {
         mViewPager.setAdapter(new FragmentStatePagerAdapter(fragmentManager) {
             @Override
             public Fragment getItem(int position) {
-
-                switch (position) {
-                    case 0:
-                        return SinglePageFragment.newInstance("1", "1");
-                    case 1:
-                        return SinglePageFragment.newInstance("2", "2");
-                    default:
-                        return SinglePageFragment.newInstance("3", "3");
-                }
-
+                return SinglePageFragment.newInstance(String.valueOf(position + 1), String.valueOf(position + 1));
             }
 
             @Override
