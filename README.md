@@ -21,8 +21,11 @@
 
 ### How to change the number of pages?
 * To modify the number of pages, you need to modify the value of the constant **NUMBER_OF_PAGES**, inside the **LevelSelectorFragment.java** class of the fragment.
+* Also you need to modify the page adapter, to insert the page number in the fragment newInstance String parameter
 
 ### Caution when modifying
 * When modifying a layout make sure you modify the tablet layout also to have the modification on the tablet's layouts
-* The code has been written to dynamically modify the values when you change the level selector's configurations ( nbre of pages, etc..)
+* The code has been written to dynamically modify the numbering when you change the level selector's configurations ( nbre of pages, etc..)
 
+## Limitations
+* The page must have a complete number of levels per page, thus a multiple of 15 in the std settings. But in case needed you can modify programmatically the last page of the viewpager. The latter must be done inside the viewpager adapter, by returning a custom page.
