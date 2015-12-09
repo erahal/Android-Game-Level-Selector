@@ -3,12 +3,16 @@
 * The selector is in landscape mode and is also has proper layouts for tablet support
 * Its has support for custom fonts for the level's button numbering
 
+![alt tag](https://github.com/erahal/Android-Game-Level-Selector/blob/master/GenericLevelSelector/levelSelector.gif)
+
+
 ##Usage Rights
 * You can use this project for free, no credit is required.. totally free.
 * If you feel like helping, try some of my apps under epollomes on the playstore, [Visit epollomes ] (https://goo.gl/f5YBwy)
 
 ## Techncial Description
 * The project is a single Activity that contains a main fragment LevelSelectorFragment.
+* It is page on android's View Pager
 * You can either use the complete activity, or use the fragment in your own project container
 
 ##Changing the Level Selector Settings
