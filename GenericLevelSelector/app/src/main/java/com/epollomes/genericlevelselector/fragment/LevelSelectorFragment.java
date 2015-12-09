@@ -25,6 +25,8 @@ import com.epollomes.genericlevelselector.R;
  */
 public class LevelSelectorFragment extends Fragment {
 
+    private ViewPager mViewPager;
+    private static final int NUMBER_OF_PAGES = 3;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -73,8 +75,6 @@ public class LevelSelectorFragment extends Fragment {
         }
     }
 
-    private ViewPager mViewPager;
-    private static final int NUMBER_OF_PAGES = 3;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
