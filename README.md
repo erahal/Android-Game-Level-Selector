@@ -16,7 +16,7 @@
 * The default settings is a 5 Columns X 3 Rows, to modify the page, you need to modify the number of widgets in the layout **fragment_single_page.xml**
 
 ### How to change the number of pages?
-To modify the number of pages, you need to modify the value of the constant **NUMBER_OF_PAGES**, inside the **LevelSelectorFragment.java** class of the fragment.
+* To modify the number of pages, you need to modify the value of the constant **NUMBER_OF_PAGES**, inside the **LevelSelectorFragment.java** class of the fragment.
 
 ### Caution when modifying
 * When modifying a layout make sure you modify the tablet layout also to have the modification on the tablet's layouts
