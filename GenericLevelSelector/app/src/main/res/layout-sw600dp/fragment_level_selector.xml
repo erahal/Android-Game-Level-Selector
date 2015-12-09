@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              tools:context=".fragment.LevelSelectorFragment">
+
+    <ImageButton
+        android:id="@+id/left_arrow_image_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:padding="35dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrow"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/level_selector_view_pager"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"/>
+
+    <ImageButton
+        android:id="@+id/right_arrow_image_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:padding="35dp"
+        android:scaleType="fitCenter"
+        android:scaleX="-1"
+        android:src="@drawable/arrow"/>
+
+</LinearLayout>
