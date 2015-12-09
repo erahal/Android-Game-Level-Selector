@@ -21,7 +21,6 @@
 
 ### How to change the number of pages?
 * To modify the number of pages, you need to modify the value of the constant **NUMBER_OF_PAGES**, inside the **LevelSelectorFragment.java** class of the fragment.
-* Also you need to modify the page adapter, to insert the page number in the fragment newInstance String parameter
 
 ### Caution when modifying
 * When modifying a layout make sure you modify the tablet layout also to have the modification on the tablet's layouts
