@@ -1,7 +1,6 @@
 package com.epollomes.genericlevelselector.fragment;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -144,9 +143,9 @@ public class LevelSelectorFragment extends Fragment {
     }
 
     // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
+    public void onButtonPressed() {
         if (mListener != null) {
-            mListener.on1stFunctionInLevelSelectorFragmentInteraction(uri);
+            mListener.on1stFunctionInLevelSelectorFragmentInteraction();
         }
     }
 
@@ -169,7 +168,7 @@ public class LevelSelectorFragment extends Fragment {
 
     public interface IOnLevelSelectorFragmentInteractionListener {
         // TODO: Update argument type and name
-        void on1stFunctionInLevelSelectorFragmentInteraction(Uri uri);
+        void on1stFunctionInLevelSelectorFragmentInteraction();
     }
 
 
@@ -196,6 +195,7 @@ public class LevelSelectorFragment extends Fragment {
             leftArrowImageButton.setEnabled(true);
             leftArrowImageButton.setVisibility(View.VISIBLE);
         }
+        onButtonPressed();
     }
 
 
